@@ -10,6 +10,7 @@ use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use UploaderService\Config\Config;
 use UploaderService\Config\Exceptions\MissingConfigValueException;
+use UploaderService\Service\Exceptions\CouldNotDeleteFileException;
 
 /**
  * Class Uploader
@@ -97,6 +98,7 @@ class Uploader {
 
     /**
      * @return Uploader
+     * @throws CouldNotDeleteFileException
      * @throws MissingConfigValueException
      * @throws S3Exception
      */
@@ -106,6 +108,7 @@ class Uploader {
         $s3Bucket = $this->config->getS3Bucket();
         $s3Key = $this->config->getS3Key();
         $s3Secret = $this->config->getS3Secret();
+        $delete = $this->config->getDelete();
 
         $queue = $this->queue;
         $client = new S3Client(
@@ -158,6 +161,12 @@ class Uploader {
                 ]
 
             );
+
+            if ( $delete && ! @unlink( $file->getPathname() ) ) {
+
+                throw new CouldNotDeleteFileException( $file );
+
+            }
 
         }
 

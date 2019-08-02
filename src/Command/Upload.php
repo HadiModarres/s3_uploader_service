@@ -9,6 +9,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use UploaderService\Config\Config;
 use UploaderService\Config\Exceptions\InvalidConfigValueException;
 use UploaderService\Config\Exceptions\MissingConfigValueException;
+use UploaderService\Service\Exceptions\CouldNotDeleteFileException;
 use UploaderService\Service\Uploader;
 
 /**
@@ -52,7 +53,10 @@ class Upload extends Command {
                          'Specifies an AWS S3 key to use for uploads.', '' )
 
             ->addOption( 's3-secret', '', InputOption::VALUE_OPTIONAL,
-                         'Specifies an AWS S3 secret to use for uploads.', '' );
+                         'Specifies an AWS S3 secret to use for uploads.', '' )
+
+            ->addOption( 'delete', '', InputOption::VALUE_NONE,
+                         'Specifies whether files should be deleted locally after uploaded.' );
 
     }
 
@@ -63,15 +67,16 @@ class Upload extends Command {
      * @return int|void|null
      * @throws InvalidConfigValueException
      * @throws MissingConfigValueException
+     * @throws CouldNotDeleteFileException
      */
     protected function execute( InputInterface $input, OutputInterface $output ) {
 
-        $config = isset( $this->config ) ? $this->config : new Config();
-        $config->mergeFromInput( $input );
+        $config = ( isset( $this->config ) ? $this->config : new Config() )
+            ->mergeFromInput( $input );
 
-        $uploader = new Uploader( $config, $output );
-        $uploader->scan();
-        $uploader->upload();
+        ( new Uploader( $config, $output ) )
+            ->scan()
+            ->upload();
 
     }
 

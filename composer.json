@@ -5,7 +5,8 @@
     "require": {
         "symfony/console": "^4.3",
         "symfony/finder": "^4.3",
-        "aws/aws-sdk-php": "^3.108"
+        "aws/aws-sdk-php": "^3.108",
+        "php": "^7.0"
     },
     "authors": [
         {

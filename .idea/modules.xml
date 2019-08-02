@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../enya/.idea/enya.iml" filepath="$PROJECT_DIR$/../enya/.idea/enya.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/enya-uploader.iml" filepath="$PROJECT_DIR$/.idea/enya-uploader.iml" />
     </modules>
   </component>

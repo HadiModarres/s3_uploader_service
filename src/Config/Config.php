@@ -44,6 +44,11 @@ class Config {
     protected $s3Secret;
 
     /**
+     * @var bool
+     */
+    protected $delete;
+
+    /**
      * @param string $key
      *
      * @return Config
@@ -91,7 +96,7 @@ class Config {
 
         if ( '' !== ( $value = $input->getOption( 's3-bucket' ) ) ) {
 
-            $this->setS3Region( $value );
+            $this->setS3Bucket( $value );
 
         }
 
@@ -104,6 +109,12 @@ class Config {
         if ( '' !== ( $value = $input->getOption( 's3-secret' ) ) ) {
 
             $this->setS3Secret( $value );
+
+        }
+
+        if ( ! isset( $this->delete ) ) {
+
+            $this->setDelete( $input->getOption( 'delete' ) );
 
         }
 
@@ -291,6 +302,28 @@ class Config {
     public function getS3Secret(): string {
 
         return $this->ensureSet( 's3-secret' )->s3Secret;
+
+    }
+
+    /**
+     * @param bool $delete
+     *
+     * @return Config
+     */
+    public function setDelete( bool $delete ): Config {
+
+        $this->delete = $delete;
+        return $this;
+
+    }
+
+    /**
+     * @return bool
+     * @throws MissingConfigValueException
+     */
+    public function getDelete(): bool {
+
+        return $this->ensureSet( 'delete' )->delete;
 
     }
 
