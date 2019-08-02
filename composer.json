@@ -1,0 +1,24 @@
+{
+    "name": "hadimodarres/uploader_service",
+    "description": "S3 uploader service",
+    "type": "library",
+    "require": {
+        "symfony/console": "^4.3",
+        "symfony/finder": "^4.3",
+        "aws/aws-sdk-php": "^3.108"
+    },
+    "authors": [
+        {
+            "name": "Tony Bogdanov",
+            "email": "support@tonybogdanov.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "UploaderService\\": "src/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3"
+    }
+}
