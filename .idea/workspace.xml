@@ -2,1340 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d4ee40-19e7-4f6a-abcc-f780719623b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/Exceptions/CouldNotDeleteFileException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.100.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.101.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.101.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.102.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.102.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.103.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.103.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.103.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.104.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.104.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.105.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.106.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.106.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.107.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.107.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.107.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.107.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.107.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.107.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.107.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.107.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.107.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.108.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.108.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.108.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.22.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.22.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.22.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.23.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.23.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.23.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.24.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.25.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.25.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.25.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.25.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.25.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.25.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.25.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.25.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.25.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.26.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.26.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.26.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.26.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.26.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.26.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.27.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.27.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.27.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.27.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.27.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.27.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.28.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.29.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.30.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.30.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.30.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.30.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.30.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.31.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.32.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.32.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.32.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.32.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.32.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.32.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.32.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.32.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.33.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.33.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.33.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.33.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.33.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.34.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.34.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.34.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.35.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.35.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.35.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.35.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.19" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.20" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.23" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.24" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.25" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.26" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.27" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.28" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.29" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.30" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.31" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.32" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.33" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.34" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.35" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.36" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.37" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.36.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.37.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.37.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.38.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.38.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.38.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.38.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.38.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.38.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.39.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.39.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.39.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.40.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.41.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.42.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.43.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.44.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.44.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.44.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.45.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.45.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.45.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.45.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.46.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.47.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.47.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.48.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.49.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.49.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.50.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.51.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.19" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.20" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.23" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.24" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.25" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.26" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.27" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.28" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.29" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.30" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.31" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.32" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.33" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.34" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.35" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.36" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.52.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.53.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.53.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.53.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.54.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.54.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.54.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.54.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.54.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.54.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.54.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.55.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.56.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.56.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.56.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.56.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.56.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.56.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.56.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.57.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.57.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.58.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.59.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.60.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.61.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.62.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.63.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.63.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.63.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.63.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.63.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.63.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.63.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.63.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.64.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.65.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.65.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.65.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.66.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.66.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.66.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.19" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.20" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.67.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.68.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.68.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.69.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.70.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.70.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.70.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.70.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.70.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.71.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.71.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.71.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.71.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.71.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.71.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.71.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.72.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.72.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.73.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.74.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.74.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.75.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.76.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.77.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.78.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.79.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.80.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.80.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.80.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.80.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.81.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.81.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.81.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.81.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.81.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.81.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.81.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.81.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.82.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.82.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.82.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.82.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.82.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.82.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.82.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.83.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.84.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.85.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.85.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.85.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.86.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.86.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.86.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.86.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.19" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.20" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.23" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.87.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.88.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.88.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.89.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.89.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.90.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.91.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.91.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.91.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.91.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.91.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.91.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.91.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.92.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.92.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.92.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.92.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.92.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.92.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.93.9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.94.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.94.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.94.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.94.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.95.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.96.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.97.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.98.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.99.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.99.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.99.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.99.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.changes/3.99.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.github/ISSUE_TEMPLATE/feature_request.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/.github/ISSUE_TEMPLATE/general_issue.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ACMPCA/Exception/ACMPCAException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Acm/Exception/AcmException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/AlexaForBusiness/Exception/AlexaForBusinessException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Amplify/Exception/AmplifyException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Api/DateTimeResult.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Api/ErrorParser/JsonParserTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Api/ListShape.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Api/Parser/AbstractParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Api/Serializer/Ec2ParamBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Api/Serializer/RestXmlSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ApiGateway/Exception/ApiGatewayException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ApiGatewayManagementApi/ApiGatewayManagementApiClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ApiGatewayManagementApi/Exception/ApiGatewayManagementApiException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ApiGatewayV2/Exception/ApiGatewayV2Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/AppMesh/Exception/AppMeshException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/AppSync/Exception/AppSyncException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ApplicationAutoScaling/Exception/ApplicationAutoScalingException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ApplicationDiscoveryService/Exception/ApplicationDiscoveryServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ApplicationInsights/Exception/ApplicationInsightsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Appstream/Exception/AppstreamException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Athena/Exception/AthenaException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/AutoScaling/Exception/AutoScalingException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/AutoScalingPlans/Exception/AutoScalingPlansException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Backup/Exception/BackupException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Batch/Exception/BatchException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Budgets/Exception/BudgetsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CacheInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Chime/Exception/ChimeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ClientSideMonitoring/ConfigurationInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ClientSideMonitoring/Exception/ConfigurationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ClientSideMonitoring/MonitoringMiddlewareInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Cloud9/Exception/Cloud9Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudDirectory/Exception/CloudDirectoryException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudFormation/Exception/CloudFormationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudFront/Exception/CloudFrontException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudHSMV2/Exception/CloudHSMV2Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudHsm/Exception/CloudHsmException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudSearch/Exception/CloudSearchException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudSearchDomain/Exception/CloudSearchDomainException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudTrail/Exception/CloudTrailException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudWatch/Exception/CloudWatchException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudWatchEvents/Exception/CloudWatchEventsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CloudWatchLogs/Exception/CloudWatchLogsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CodeBuild/Exception/CodeBuildException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CodeCommit/Exception/CodeCommitException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CodeDeploy/Exception/CodeDeployException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CodePipeline/Exception/CodePipelineException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CodeStar/Exception/CodeStarException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CognitoIdentity/Exception/CognitoIdentityException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CognitoIdentityProvider/Exception/CognitoIdentityProviderException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CognitoSync/Exception/CognitoSyncException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CommandInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Comprehend/Exception/ComprehendException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ComprehendMedical/ComprehendMedicalClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ComprehendMedical/Exception/ComprehendMedicalException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ConfigService/Exception/ConfigServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Connect/Exception/ConnectException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CostExplorer/Exception/CostExplorerException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CostandUsageReportService/CostandUsageReportServiceClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/CostandUsageReportService/Exception/CostandUsageReportServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Crypto/AesStreamInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Crypto/MetadataStrategyInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DAX/Exception/DAXException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DLM/DLMClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DLM/Exception/DLMException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DataPipeline/Exception/DataPipelineException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DataSync/Exception/DataSyncException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DatabaseMigrationService/Exception/DatabaseMigrationServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DeviceFarm/Exception/DeviceFarmException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DirectConnect/Exception/DirectConnectException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DirectoryService/Exception/DirectoryServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DocDB/Exception/DocDBException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DoctrineCacheAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DynamoDb/BinaryValue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DynamoDb/Exception/DynamoDbException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DynamoDb/NumberValue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DynamoDb/SessionConnectionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DynamoDb/SetValue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DynamoDbStreams/DynamoDbStreamsClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/DynamoDbStreams/Exception/DynamoDbStreamsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/EC2InstanceConnect/EC2InstanceConnectClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/EC2InstanceConnect/Exception/EC2InstanceConnectException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/EKS/Exception/EKSException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Ec2/Exception/Ec2Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Ecr/Exception/EcrException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Ecs/Exception/EcsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Efs/Exception/EfsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ElastiCache/Exception/ElastiCacheException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ElasticBeanstalk/Exception/ElasticBeanstalkException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ElasticLoadBalancing/Exception/ElasticLoadBalancingException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ElasticLoadBalancingV2/Exception/ElasticLoadBalancingV2Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ElasticTranscoder/Exception/ElasticTranscoderException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ElasticsearchService/Exception/ElasticsearchServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Emr/Exception/EmrException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/EndpointDiscovery/ConfigurationInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/EndpointDiscovery/Exception/ConfigurationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/EventBridge/Exception/EventBridgeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Exception/CredentialsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Exception/EventStreamDataException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Exception/IncalculablePayloadException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Exception/InvalidJsonException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Exception/UnresolvedApiException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Exception/UnresolvedEndpointException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Exception/UnresolvedSignatureException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/FMS/Exception/FMSException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/FSx/Exception/FSxException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Firehose/Exception/FirehoseException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/GameLift/Exception/GameLiftException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Glacier/Exception/GlacierException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/GlobalAccelerator/Exception/GlobalAcceleratorException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Glue/Exception/GlueException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Greengrass/Exception/GreengrassException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/GroundStation/Exception/GroundStationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/GuardDuty/Exception/GuardDutyException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Handler/GuzzleV5/GuzzleStream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Handler/GuzzleV5/PsrStream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/HasMonitoringEventsTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/HashInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Health/Exception/HealthException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Iam/Exception/IamException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ImportExport/Exception/ImportExportException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ImportExport/ImportExportClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Inspector/Exception/InspectorException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IoT1ClickDevicesService/Exception/IoT1ClickDevicesServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IoT1ClickProjects/Exception/IoT1ClickProjectsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IoTAnalytics/Exception/IoTAnalyticsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IoTEvents/Exception/IoTEventsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IoTEventsData/Exception/IoTEventsDataException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IoTEventsData/IoTEventsDataClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IoTJobsDataPlane/Exception/IoTJobsDataPlaneException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IoTJobsDataPlane/IoTJobsDataPlaneClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IoTThingsGraph/Exception/IoTThingsGraphException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Iot/Exception/IotException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IotDataPlane/Exception/IotDataPlaneException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/IotDataPlane/IotDataPlaneClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/JsonCompiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Kafka/Exception/KafkaException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Kinesis/Exception/KinesisException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/KinesisAnalytics/Exception/KinesisAnalyticsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/KinesisAnalyticsV2/Exception/KinesisAnalyticsV2Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/KinesisVideo/Exception/KinesisVideoException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/KinesisVideoArchivedMedia/Exception/KinesisVideoArchivedMediaException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/KinesisVideoArchivedMedia/KinesisVideoArchivedMediaClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/KinesisVideoMedia/Exception/KinesisVideoMediaException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/KinesisVideoMedia/KinesisVideoMediaClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Kms/Exception/KmsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Lambda/Exception/LambdaException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/LexModelBuildingService/Exception/LexModelBuildingServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/LexRuntimeService/Exception/LexRuntimeServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/LexRuntimeService/LexRuntimeServiceClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/LicenseManager/Exception/LicenseManagerException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Lightsail/Exception/LightsailException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MQ/Exception/MQException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MTurk/Exception/MTurkException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MachineLearning/Exception/MachineLearningException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Macie/Exception/MacieException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ManagedBlockchain/Exception/ManagedBlockchainException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MarketplaceCommerceAnalytics/Exception/MarketplaceCommerceAnalyticsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MarketplaceCommerceAnalytics/MarketplaceCommerceAnalyticsClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MarketplaceEntitlementService/Exception/MarketplaceEntitlementServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MarketplaceEntitlementService/MarketplaceEntitlementServiceClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MarketplaceMetering/Exception/MarketplaceMeteringException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MarketplaceMetering/MarketplaceMeteringClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MediaConnect/Exception/MediaConnectException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MediaConvert/Exception/MediaConvertException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MediaLive/Exception/MediaLiveException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MediaPackage/Exception/MediaPackageException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MediaPackageVod/Exception/MediaPackageVodException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MediaStore/Exception/MediaStoreException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MediaStoreData/Exception/MediaStoreDataException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MediaStoreData/MediaStoreDataClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MediaTailor/Exception/MediaTailorException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MigrationHub/Exception/MigrationHubException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Mobile/Exception/MobileException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/MonitoringEventsInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Neptune/Exception/NeptuneException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/OpsWorks/Exception/OpsWorksException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/OpsWorksCM/Exception/OpsWorksCMException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Organizations/Exception/OrganizationsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/PI/Exception/PIException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/PI/PIClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Personalize/Exception/PersonalizeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/PersonalizeEvents/Exception/PersonalizeEventsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/PersonalizeEvents/PersonalizeEventsClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/PersonalizeRuntime/Exception/PersonalizeRuntimeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/PersonalizeRuntime/PersonalizeRuntimeClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Pinpoint/Exception/PinpointException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/PinpointEmail/Exception/PinpointEmailException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/PinpointSMSVoice/Exception/PinpointSMSVoiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Polly/Exception/PollyException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Pricing/Exception/PricingException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Pricing/PricingClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Psr16CacheAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/PsrCacheAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/QuickSight/Exception/QuickSightException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/RAM/Exception/RAMException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/RDSDataService/Exception/RDSDataServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/RDSDataService/RDSDataServiceClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Rds/Exception/RdsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Redshift/Exception/RedshiftException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Rekognition/Exception/RekognitionException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ResourceGroups/Exception/ResourceGroupsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ResourceGroupsTaggingAPI/Exception/ResourceGroupsTaggingAPIException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPIClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ResponseContainerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/RoboMaker/Exception/RoboMakerException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Route53/Exception/Route53Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Route53Domains/Exception/Route53DomainsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Route53Resolver/Exception/Route53ResolverException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/S3/Exception/PermanentRedirectException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/S3/Exception/S3Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/S3Control/Exception/S3ControlException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/SageMaker/Exception/SageMakerException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/SageMakerRuntime/Exception/SageMakerRuntimeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/SageMakerRuntime/SageMakerRuntimeClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/SecretsManager/Exception/SecretsManagerException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/SecurityHub/Exception/SecurityHubException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ServerlessApplicationRepository/Exception/ServerlessApplicationRepositoryException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ServiceCatalog/Exception/ServiceCatalogException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ServiceDiscovery/Exception/ServiceDiscoveryException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/ServiceQuotas/Exception/ServiceQuotasException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Ses/Exception/SesException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Sfn/Exception/SfnException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Shield/Exception/ShieldException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Signature/AnonymousSignature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Sms/Exception/SmsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/SnowBall/Exception/SnowBallException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Sns/Exception/SnsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Sqs/Exception/SqsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Ssm/Exception/SsmException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/StorageGateway/Exception/StorageGatewayException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Sts/Exception/StsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Sts/RegionalEndpoints/Configuration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Sts/RegionalEndpoints/ConfigurationInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Sts/RegionalEndpoints/Exception/ConfigurationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Support/Exception/SupportException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Swf/Exception/SwfException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Textract/Exception/TextractException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/TranscribeService/Exception/TranscribeServiceException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Transfer/Exception/TransferException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Translate/Exception/TranslateException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Translate/TranslateClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/Waf/Exception/WafException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/WafRegional/Exception/WafRegionalException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/WorkDocs/Exception/WorkDocsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/WorkLink/Exception/WorkLinkException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/WorkMail/Exception/WorkMailException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/WorkSpaces/Exception/WorkSpacesException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/XRay/Exception/XRayException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/acm-pca/2017-08-22/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/acm/2015-12-08/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/acm/2015-12-08/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/acm/2015-12-08/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/aliases.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/amplify/2017-07-25/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/apigateway/2015-07-09/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/apigatewaymanagementapi/2018-11-29/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/apigatewayv2/2018-11-29/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/application-autoscaling/2016-02-06/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/application-autoscaling/2016-02-06/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/application-insights/2018-11-25/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/appmesh/2018-10-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/appmesh/2019-01-25/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/appstream/2016-12-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/appstream/2016-12-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/appsync/2017-07-25/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/athena/2017-05-18/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/athena/2017-05-18/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/autoscaling-plans/2018-01-06/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/autoscaling/2011-01-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/batch/2016-08-10/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/batch/2016-08-10/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/budgets/2016-10-20/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ce/2017-10-25/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/chime/2018-05-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloud9/2017-09-23/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2016-09-07/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2016-09-29/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2016-11-25/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2017-03-25/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2017-10-30/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2017-10-30/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2018-06-18/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2018-06-18/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2018-11-05/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2018-11-05/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2019-03-26/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudfront/2019-03-26/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudhsm/2014-05-30/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudhsmv2/2017-04-28/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudhsmv2/2017-04-28/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudsearch/2013-01-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudtrail/2013-11-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cloudtrail/2013-11-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codebuild/2016-10-06/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codebuild/2016-10-06/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codecommit/2015-04-13/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codedeploy/2014-10-06/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codedeploy/2014-10-06/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codedeploy/2014-10-06/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codedeploy/2014-10-06/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codepipeline/2015-07-09/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codepipeline/2015-07-09/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codestar/2017-04-19/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/codestar/2017-04-19/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cognito-identity/2014-06-30/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cognito-idp/2016-04-18/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/comprehendmedical/2018-10-30/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/config/2014-11-12/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/config/2014-11-12/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/connect/2017-08-08/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cur/2017-01-06/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/cur/2017-01-06/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/datapipeline/2012-10-29/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/datasync/2018-11-09/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dax/2017-04-19/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/devicefarm/2015-06-23/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/directconnect/2012-10-25/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/directconnect/2012-10-25/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/discovery/2015-11-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/discovery/2015-11-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dlm/2018-01-12/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dms/2016-01-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/docdb/2014-10-31/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ds/2015-04-16/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ds/2015-04-16/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dynamodb/2011-12-05/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dynamodb/2011-12-05/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dynamodb/2011-12-05/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dynamodb/2011-12-05/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dynamodb/2012-08-10/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dynamodb/2012-08-10/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dynamodb/2012-08-10/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/dynamodb/2012-08-10/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ec2-instance-connect/2018-04-02/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ec2/2016-11-15/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ecr/2015-09-21/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ecr/2015-09-21/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ecs/2014-11-13/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/eks/2017-11-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/eks/2017-11-01/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticache/2015-02-02/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticbeanstalk/2010-12-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticbeanstalk/2010-12-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticfilesystem/2015-02-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticfilesystem/2015-02-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticloadbalancing/2012-06-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticloadbalancing/2012-06-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticloadbalancingv2/2015-12-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticloadbalancingv2/2015-12-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticmapreduce/2009-03-31/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elasticmapreduce/2009-03-31/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elastictranscoder/2012-09-25/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elastictranscoder/2012-09-25/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elastictranscoder/2012-09-25/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/elastictranscoder/2012-09-25/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/email/2010-12-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/email/2010-12-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/email/2010-12-01/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/email/2010-12-01/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/endpoints_prefix_history.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/entitlement.marketplace/2017-01-11/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/es/2015-01-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/es/2015-01-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/eventbridge/2015-10-07/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/eventbridge/2015-10-07/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/events/2015-10-07/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/events/2015-10-07/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/firehose/2015-08-04/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/firehose/2015-08-04/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/fms/2018-01-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/fsx/2018-03-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/gamelift/2015-10-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/gamelift/2015-10-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/glacier/2012-06-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/glacier/2012-06-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/glacier/2012-06-01/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/glacier/2012-06-01/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/globalaccelerator/2018-08-08/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/glue/2017-03-31/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/health/2016-08-04/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/iam/2010-05-08/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/importexport/2010-06-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/inspector/2016-02-16/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/iot-jobs-data/2017-09-29/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/iot/2015-05-28/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/iot/2015-05-28/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/iot1click-projects/2018-05-14/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/iotanalytics/2017-11-27/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/iotevents-data/2018-10-23/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/iotevents/2018-07-27/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kafka/2018-11-14/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kinesis-video-archived-media/2017-09-30/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kinesis-video-media/2017-09-30/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kinesis/2013-12-02/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kinesis/2013-12-02/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kinesis/2013-12-02/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kinesisanalytics/2015-08-14/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kinesisanalyticsv2/2018-05-23/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kinesisvideo/2017-09-30/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kms/2014-11-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/kms/2014-11-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/lambda/2015-03-31/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/lambda/2015-03-31/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/lambda/2015-03-31/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/license-manager/2018-08-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/lightsail/2016-11-28/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/lightsail/2016-11-28/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/logs/2014-03-28/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/machinelearning/2014-12-12/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/macie/2017-12-19/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/managedblockchain/2018-09-24/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/marketplacecommerceanalytics/2015-07-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mediaconnect/2018-11-14/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mediaconvert/2017-08-29/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/medialive/2017-10-14/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mediapackage-vod/2018-11-07/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mediapackage/2017-10-12/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mediastore-data/2017-09-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mediastore/2017-09-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mediatailor/2018-04-23/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/metering.marketplace/2016-01-14/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mgh/2017-05-31/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mobile/2017-07-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/monitoring/2010-08-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/monitoring/2010-08-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/monitoring/2010-08-01/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mq/2017-11-27/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/mturk-requester/2017-01-17/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/neptune/2014-10-31/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/opsworks/2013-02-18/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/opsworkscm/2016-11-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/opsworkscm/2016-11-01/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/personalize-events/2018-03-22/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/personalize-runtime/2018-05-22/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/pi/2018-02-27/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/pinpoint-email/2018-07-26/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/polly/2016-06-10/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/polly/2016-06-10/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/pricing/2017-10-15/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/quicksight/2018-04-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ram/2018-01-04/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/rds-data/2018-08-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/rds/2014-09-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/rds/2014-09-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/rds/2014-10-31/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/rds/2014-10-31/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/redshift/2012-12-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/redshift/2012-12-01/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/rekognition/2016-06-27/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/resource-groups/2017-11-27/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/resourcegroupstaggingapi/2017-01-26/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/robomaker/2018-06-29/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/route53/2013-04-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/route53/2013-04-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/route53/2013-04-01/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/route53domains/2014-05-15/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/route53resolver/2018-04-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/route53resolver/2018-04-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/runtime.lex/2016-11-28/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/runtime.sagemaker/2017-05-13/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/s3/2006-03-01/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/s3/2006-03-01/waiters-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/s3control/2018-08-20/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/secretsmanager/2017-10-17/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/secretsmanager/2017-10-17/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/securityhub/2018-10-26/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/serverlessrepo/2017-09-08/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/servicecatalog/2015-12-10/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/servicediscovery/2017-03-14/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/shield/2016-06-02/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/shield/2016-06-02/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/signer/2017-08-25/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/signer/2017-08-25/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/sms/2016-10-24/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/sms/2016-10-24/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/snowball/2016-06-30/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/snowball/2016-06-30/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/sns/2010-03-31/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/sns/2010-03-31/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/sqs/2012-11-05/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/sqs/2012-11-05/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/sqs/2012-11-05/waiters-2.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/ssm/2014-11-06/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/states/2016-11-23/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/states/2016-11-23/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/streams.dynamodb/2012-08-10/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/sts/2011-06-15/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/sts/2011-06-15/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/support/2013-04-15/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/textract/2018-06-27/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/transcribe/2017-10-26/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/transfer/2018-11-05/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/translate/2017-07-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/waf-regional/2016-11-28/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/waf-regional/2016-11-28/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/waf/2015-08-24/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/waf/2015-08-24/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/workdocs/2016-05-01/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/worklink/2018-09-25/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/workspaces/2015-04-08/paginators-1.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/data/workspaces/2015-04-08/smoke.json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/aws/aws-sdk-php/src/signer/Exception/signerException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/bin/jp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/bin/var-dump-server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/Exception/BadResponseException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/Exception/ClientException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/Exception/ConnectException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/Exception/GuzzleException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/Exception/SeekException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/Exception/ServerException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/Exception/TooManyRedirectsException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/Exception/TransferException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/Handler/CurlFactoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle/src/functions_include.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/promises/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/promises/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/promises/src/AggregateException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/promises/src/CancellationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/promises/src/PromisorInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/promises/src/TaskQueueInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/promises/src/functions_include.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/psr7/src/LazyOpenStream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/psr7/src/NoSeekStream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/psr7/src/Rfc7230.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/guzzlehttp/psr7/src/functions_include.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/src/JmesPath.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/EnvTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/FnDispatcherTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/SyntaxErrorExceptionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/TreeCompilerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/compliance/current.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/compliance/perf/basic.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/compliance/perf/deep_projection.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/compliance/perf/multiwildcard.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/compliance/perf/wildcardindex.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/mtdowling/jmespath.php/tests/compliance/unicode.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/psr/container/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/psr/container/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/psr/container/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/psr/container/src/ContainerExceptionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/psr/container/src/NotFoundExceptionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/psr/http-message/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/psr/http-message/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/ralouphie/getallheaders/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/CommandLoader/CommandLoaderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Descriptor/DescriptorInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Exception/ExceptionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Exception/InvalidArgumentException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Exception/InvalidOptionException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Exception/LogicException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Exception/NamespaceNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Exception/RuntimeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Helper/HelperInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Helper/InputAwareHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Helper/TableRows.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Helper/TableSeparator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Input/InputAwareInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Input/StreamableInputInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Output/BufferedOutput.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Output/ConsoleOutputInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Descriptor/XmlDescriptorTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/BarBucCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/DescriptorApplication1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/DescriptorApplication2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/DescriptorApplicationMbString.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/DescriptorCommand1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/DescriptorCommand2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/DescriptorCommand3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/DescriptorCommand4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/DescriptorCommandMbString.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/DummyOutput.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Foo1Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Foo2Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Foo3Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Foo4Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Foo5Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Foo6Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FooCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FooLock2Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FooLockCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FooOptCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FooSameCaseLowercaseCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FooSameCaseUppercaseCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FooSubnamespaced1Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FooSubnamespaced2Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FooWithoutAliasCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/FoobarCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_0.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_10.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_11.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_12.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_13.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_14.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_15.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_16.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_17.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_6.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_7.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_8.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/command_9.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/command/interactive_command_1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/interactive_output_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_12.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_13.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_14.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_15.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_16.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_17.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_4_with_iterators.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/Style/SymfonyStyle/output/output_9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/TestAmbiguousCommandRegistering.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/TestAmbiguousCommandRegistering2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/TestCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_filtered_namespace.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_gethelp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_mbstring.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception3decorated.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth1decorated.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception_doublewidth2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception_escapeslines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_renderexception_linebreaks.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_run1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_run2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_run3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/application_run4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_mbstring.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/command_mbstring.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_with_default_inf_value.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_argument_with_style.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_definition_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_5.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_6.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_default_inf_value.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_style.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_style.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_style.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_style.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Fixtures/input_option_with_style_array.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Helper/AbstractQuestionHelperTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/console/Tests/Helper/TableStyleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Exception/AccessDeniedException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Exception/DirectoryNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/.dot/a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/.dot/b/c.neon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/.dot/b/d.neon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/A/B/C/abc.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/A/B/ab.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/A/a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/copy/A/B/C/abc.dat.copy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/copy/A/B/ab.dat.copy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/copy/A/a.dat.copy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/dolor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/ipsum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/lorem.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/one/.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/one/a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/one/b/c.neon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/one/b/d.neon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/r+e.gex[c]a(r)s/dir/bar.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Fixtures/with space/foo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/Tests/Iterator/MockFileListIterator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/finder/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/polyfill-mbstring/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/polyfill-mbstring/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/polyfill-php72/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/polyfill-php72/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/polyfill-php73/Php73.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/polyfill-php73/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/polyfill-php73/Resources/stubs/JsonException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/polyfill-php73/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/polyfill-php73/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/service-contracts/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/service-contracts/ResetInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/service-contracts/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Caster/ConstStub.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Caster/CutArrayStub.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Caster/DsPairStub.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Caster/EnumStub.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Caster/FrameStub.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Caster/GmpCaster.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Caster/ProxyManagerCaster.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Caster/TraceStub.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Cloner/ClonerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Command/Descriptor/DumpDescriptorInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Dumper/ContextProvider/CliContextProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Dumper/ContextProvider/ContextProviderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Dumper/DataDumperInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Exception/ThrowingCasterException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Resources/functions/dump.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Resources/js/htmlDescriptor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Tests/Fixtures/FooInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Tests/Fixtures/GeneratorDemo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Tests/Fixtures/NotLoadableClass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Tests/Fixtures/Php74.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Tests/Fixtures/Twig.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Tests/Fixtures/dumb-var.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Tests/Fixtures/dump_server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/Tests/Fixtures/xml_reader.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/vendor/symfony/var-dumper/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/Exceptions/InvalidLogNotationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/Uploader/Output.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/enya-uploader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/enya-uploader.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cli.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cli.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Upload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/Config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/Uploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Uploader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../enya/public" beforeDir="false" afterPath="$PROJECT_DIR$/../enya/public" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1343,45 +22,70 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="310">
-                <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../enya/public/.bin/cli.php">
+        <entry file="file://$PROJECT_DIR$/src/Command/Upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-759">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="41" />
+            <state relative-caret-position="147">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Logger.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="315">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>InvalidConfigValueException</find>
+      <find>mono</find>
+      <find>error</find>
+      <find>found</find>
+      <find>run</find>
+      <find>output</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1391,10 +95,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/Service/CouldNotDeleteFileException.php" />
         <option value="$PROJECT_DIR$/src/Service/Exceptions/CouldNotDeleteFileException.php" />
-        <option value="$PROJECT_DIR$/src/Service/Uploader.php" />
-        <option value="$PROJECT_DIR$/src/Config/Config.php" />
-        <option value="$PROJECT_DIR$/src/Command/Upload.php" />
         <option value="$PROJECT_DIR$/bin/cli.php" />
+        <option value="$PROJECT_DIR$/src/Config/Config.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/src/Util/CombinedOutput.php" />
+        <option value="$PROJECT_DIR$/src/Util/Output.php" />
+        <option value="$PROJECT_DIR$/src/Command/Exceptions/InvalidLoggerNotationException.php" />
+        <option value="$PROJECT_DIR$/src/Command/Exceptions/InvalidLogNotationException.php" />
+        <option value="$PROJECT_DIR$/src/Command/Upload.php" />
+        <option value="$PROJECT_DIR$/src/Service/Uploader/Output.php" />
+        <option value="$PROJECT_DIR$/test.sh" />
+        <option value="$PROJECT_DIR$/src/Service/Uploader.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -1402,8 +114,6 @@
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
       <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
@@ -1417,6 +127,8 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -1433,14 +145,47 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="enya-uploader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enya-uploader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enya-uploader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enya-uploader" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enya-uploader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enya-uploader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enya-uploader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enya-uploader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enya-uploader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enya-uploader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -1475,26 +220,31 @@
       <option name="presentableId" value="Default" />
       <updated>1564740765588</updated>
       <workItem from="1564740766714" duration="6000" />
-      <workItem from="1564757549020" duration="2660000" />
+      <workItem from="1564757549020" duration="2945000" />
+      <workItem from="1564935039781" duration="96000" />
+      <workItem from="1564935145995" duration="388000" />
+      <workItem from="1564935539221" duration="103000" />
+      <workItem from="1564935661277" duration="10104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2666000" />
+    <option name="totallyTimeSpent" value="13642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.3852013" side_tool="true" weight="0.24147122" />
       <window_info id="TODO" order="1" sideWeight="0.26224157" side_tool="true" weight="0.18070363" />
       <window_info id="Terminal" order="2" sideWeight="0.537797" side_tool="true" weight="0.2192" />
       <window_info id="Run" order="3" sideWeight="0.26224157" side_tool="true" weight="0.2739872" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.61479867" visible="true" weight="0.1705757" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.61479867" weight="0.1705757" />
       <window_info id="File Transfer" order="6" sideWeight="0.26224157" side_tool="true" weight="0.2739872" />
       <window_info id="Version Control" order="7" sideWeight="0.53177965" side_tool="true" weight="0.18676628" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.67597765" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.67558527" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
@@ -1514,68 +264,238 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/../enya/public/.bin/cli.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="21">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Terminal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1872">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/finder/Comparator/NumberComparator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="43" column="74" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/finder/Finder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="588" column="41" selection-start-line="588" selection-start-column="15" selection-end-line="588" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Style/SymfonyStyle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="390" column="21" selection-start-line="390" selection-start-column="21" selection-end-line="390" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressBar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="251" column="5" lean-forward="true" selection-start-line="251" selection-start-column="5" selection-end-line="260" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#42#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="105">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/Exceptions/InvalidLogNotationException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug-no-bubble.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-448" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error-no-bubble.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info-no-bubble.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug-and-up.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug-only.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error-and-up.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-343" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info-and-up.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-364" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info-only.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="63">
+          <caret column="753" lean-forward="true" selection-start-column="753" selection-end-column="753" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="105">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/Uploader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="e#43#63#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Service/Exceptions/CouldNotDeleteFileException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="252">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding>
             <element signature="e#54#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/Uploader.php">
+    <entry file="file://$PROJECT_DIR$/src/Service/Uploader/Output.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="-1515">
+          <caret line="111" column="69" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
+          <folding>
+            <element signature="e#52#66#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Config/Config.php">
+    <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4056">
-          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+        <state relative-caret-position="210">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Command/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="184" column="63" selection-start-line="184" selection-start-column="57" selection-end-line="184" selection-end-column="63" />
+          <folding>
+            <element signature="e#284#326#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Output/ConsoleOutput.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/console/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/cli.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="357">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../enya/public/.bin/cli.php">
+    <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="41" />
+        <state relative-caret-position="293">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/Upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
-          <folding>
-            <element signature="e#43#89#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="147">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="310">
-            <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <first_editor relative-caret-position="1617">
+            <caret line="77" column="69" lean-forward="true" selection-start-line="77" selection-start-column="69" selection-end-line="77" selection-end-column="69" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>

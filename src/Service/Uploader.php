@@ -2,15 +2,13 @@
 
 namespace UploaderService\Service;
 
-use Aws\S3\Exception\S3Exception;
 use Aws\S3\S3Client;
-use Symfony\Component\Console\Helper\ProgressBar;
-use Symfony\Component\Console\Output\OutputInterface;
+use Exception;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use UploaderService\Config\Config;
-use UploaderService\Config\Exceptions\MissingConfigValueException;
 use UploaderService\Service\Exceptions\CouldNotDeleteFileException;
+use UploaderService\Service\Uploader\Output;
 
 /**
  * Class Uploader
@@ -25,7 +23,7 @@ class Uploader {
     protected $config;
 
     /**
-     * @var OutputInterface
+     * @var Output
      */
     protected $output;
 
@@ -35,15 +33,37 @@ class Uploader {
     protected $queue = [];
 
     /**
+     * @param callable $callback
+     *
+     * @return mixed
+     * @throws Exception
+     */
+    protected function tryCatch( callable $callback ) {
+
+        try {
+
+            return call_user_func( $callback );
+
+        } catch ( Exception $e ) {
+
+            $this->output->exception( $e );
+            throw $e;
+
+        }
+
+    }
+
+    /**
      * Uploader constructor.
      *
      * @param Config $config
-     * @param OutputInterface|null $output
+     * @param Output|null $output
      */
-    public function __construct( Config $config, OutputInterface $output = null ) {
+    public function __construct( Config $config, Output $output = null ) {
 
-        $this->config = $config;
-        $this->output = $output;
+        $this
+            ->setConfig( $config )
+            ->setOutput( $output ?? new Output() );
 
     }
 
@@ -52,45 +72,62 @@ class Uploader {
      */
     public function clear(): Uploader {
 
+        $output = $this->getOutput();
+
+        $output->debug( 'Clearing queue.' );
+
+        $cleared = count( $this->queue );
         $this->queue = [];
+
+        $output->success( 'Successfully cleared <comment>{count:%1$d}</comment> {pluralize:%1$d:item}.', $cleared );
+
         return $this;
 
     }
 
     /**
      * @return Uploader
-     * @throws MissingConfigValueException
+     * @throws Exception
      */
     public function scan(): Uploader {
 
-        $path = $this->config->getPath();
+        $this->tryCatch( function () {
 
-        $files = ( new Finder() )
-            ->files()
-            ->size( '>= ' . $this->config->getSizeThreshold() )
-            ->in( $path );
+            $path = $this->config->getPath();
+            $sizeThreshold = $this->config->getSizeThreshold();
 
-        if ( isset( $this->output ) ) {
+            $output = $this->getOutput();
+            $output->debug(
 
-            $this->output->writeln( sprintf( 'Scanning <comment>%s</comment>', $path ) );
+                'Scanning directory <comment>%1$s</comment> for files larger than <comment>%2$s</comment>.',
+                $path,
+                $sizeThreshold
 
-            $progress = new ProgressBar( $this->output );
-            $files = $progress->iterate( $files );
+            );
 
-        }
+            $files = ( new Finder() )
+                ->files()
+                ->size( '>= ' . $sizeThreshold )
+                ->in( $path );
 
-        /** @var SplFileInfo $file */
-        foreach ( $files as $file ) {
+            $files = $output->trackProgress( $files );
 
-            $this->queue[] = $file;
+            /** @var SplFileInfo $file */
+            foreach ( $files as $file ) {
 
-        }
+                $this->queue[] = $file;
 
-        if ( isset( $this->output ) ) {
+            }
 
-            $this->output->writeln( '' );
+            $output->debug(
 
-        }
+                'Found <comment>{count:%1$d}</comment> files larger than <comment>%2$s</comment>.',
+                count( $this->queue ),
+                $sizeThreshold
+
+            );
+
+        } );
 
         return $this;
 
@@ -98,84 +135,146 @@ class Uploader {
 
     /**
      * @return Uploader
-     * @throws CouldNotDeleteFileException
-     * @throws MissingConfigValueException
-     * @throws S3Exception
+     * @throws Exception
      */
     public function upload(): Uploader {
 
-        $s3Region = $this->config->getS3Region();
-        $s3Bucket = $this->config->getS3Bucket();
-        $s3Key = $this->config->getS3Key();
-        $s3Secret = $this->config->getS3Secret();
-        $delete = $this->config->getDelete();
+        $this->tryCatch( function () {
 
-        $queue = $this->queue;
-        $client = new S3Client(
+            $s3Region = $this->config->getS3Region();
+            $s3Bucket = $this->config->getS3Bucket();
+            $s3Key = $this->config->getS3Key();
+            $s3Secret = $this->config->getS3Secret();
+            $delete = $this->config->getDelete();
 
-            [
+            $queue = $this->queue;
 
-                'version' => 'latest',
-                'region' => $s3Region,
-                'credentials' => [
+            $output = $this->getOutput();
+            $output->debug(
 
-                    'key' => $s3Key,
-                    'secret' => $s3Secret,
-
-                ],
-
-            ]
-
-        );
-
-        if ( isset( $this->output ) ) {
-
-            $this->output->writeln(
-
-                sprintf(
-
-                    'Uploading <comment>%s</comment> files',
-                    number_format( count( $this->queue ), 0, '', ',' )
-
-                )
+                'Preparing to upload <comment>{count:%1$d}</comment> queued files.',
+                count( $queue )
 
             );
 
-            $progress = new ProgressBar( $this->output );
-            $queue = $progress->iterate( $queue );
-
-        }
-
-        /** @var SplFileInfo $file */
-        foreach ( $queue as $file ) {
-
-            $client->putObject(
+            $client = new S3Client(
 
                 [
 
-                    'Bucket' => $s3Bucket,
-                    'Key' => $file->getRelativePathname(),
-                    'Body' => $file->getContents(),
-                    'ACL' => 'public-read',
+                    'version' => 'latest',
+                    'region' => $s3Region,
+                    'credentials' => [
+
+                        'key' => $s3Key,
+                        'secret' => $s3Secret,
+
+                    ],
 
                 ]
 
             );
 
-            if ( $delete && ! @unlink( $file->getPathname() ) ) {
+            $queue = $output->trackProgress( $queue );
 
-                throw new CouldNotDeleteFileException( $file );
+            /** @var SplFileInfo $file */
+            foreach ( $queue as $file ) {
+
+                $output->debug(
+
+                    'Uploading <comment>%1$s</comment> to ' .
+                    'https://<comment>%2$s</comment>.s3-<comment>%3$s</comment>.amazonaws.com/<comment>%4$s</comment>.',
+                    $file->getPathname(),
+                    $s3Bucket,
+                    $s3Region,
+                    $file->getRelativePathname()
+
+                );
+
+                $client->putObject(
+
+                    [
+
+                        'Bucket' => $s3Bucket,
+                        'Key' => $file->getRelativePathname(),
+                        'Body' => $file->getContents(),
+                        'ACL' => 'public-read',
+
+                    ]
+
+                );
+
+                $output->success(
+
+                    'Successfully uploaded <comment>%1$s</comment> to ' .
+                    'https://<comment>%2$s</comment>.s3-<comment>%3$s</comment>.amazonaws.com/<comment>%4$s</comment>.',
+                    $file->getPathname(),
+                    $s3Bucket,
+                    $s3Region,
+                    $file->getRelativePathname()
+
+                );
+
+                if ( ! $delete ) {
+
+                    continue;
+
+                }
+
+                if ( ! @unlink( $file->getPathname() ) ) {
+
+                    throw new CouldNotDeleteFileException( $file );
+
+                }
+
+                $output->success( 'Successfully deleted <comment>%1$s</comment>.', $file->getPathname() );
 
             }
 
-        }
 
-        if ( isset( $this->output ) ) {
+        } );
 
-            $this->output->writeln( '' );
+        return $this;
 
-        }
+    }
 
+    /**
+     * @return Config
+     */
+    public function getConfig(): Config {
+
+        return $this->config;
+
+    }
+
+    /**
+     * @param Config $config
+     *
+     * @return Uploader
+     */
+    public function setConfig( Config $config ): Uploader {
+
+        $this->config = $config;
+        return $this;
+
+    }
+
+    /**
+     * @return Output
+     */
+    public function getOutput(): Output {
+
+        return $this->output;
+
+    }
+
+    /**
+     * @param Output $output
+     *
+     * @return Uploader
+     */
+    public function setOutput( Output $output ): Uploader {
+
+        $this->output = $output;
         return $this;
 
     }

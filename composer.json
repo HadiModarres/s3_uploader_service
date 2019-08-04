@@ -6,7 +6,8 @@
         "symfony/console": "^4.3",
         "symfony/finder": "^4.3",
         "aws/aws-sdk-php": "^3.108",
-        "php": "^7.0"
+        "php": "^7.2",
+        "monolog/monolog": "^1.24"
     },
     "authors": [
         {
@@ -18,8 +19,5 @@
         "psr-4": {
             "UploaderService\\": "src/"
         }
-    },
-    "require-dev": {
-        "symfony/var-dumper": "^4.3"
     }
 }

@@ -5,13 +5,30 @@ Optionally files can also be deleted after successfully uploaded.
 
 # Installation
 
-The software can be installed using [Composer](https://getcomposer.org).
+## As composer package
+
+The software can be installed using [Composer](https://getcomposer.org) as dependency package.
 
 ```bash
 composer require hadimodarres/uploader_service
 ```
 
 The package will be installed in `vendor/hadimodarres/uploader_service`.
+
+## Download
+
+Alternative you can directly clone the repository or download it as a ZIP file.
+
+```bash
+git clone https://github.com/HadiModarres/uploader_service.git
+```
+
+After that you would still need to install all of it's dependencies.
+
+```bash
+cd uploader_service
+composer install
+```
 
 # Usage
 
@@ -27,7 +44,7 @@ $config = ( new \UploaderService\Config\Config() )
     ->setS3Bucket( 'your-bucket' )
     ->setS3Key( 'your-key' )
     ->setS3Secret( 'your-secret' )
-    ->setDelete( true ); // omit or pass false if you don't want files to be deleted
+    ->setDelete( true ); // pass false if you don't want files to be deleted
 
 $uploader = new \UploaderService\Service\Uploader( $config );
 $uploader->scan(); // scan files
@@ -41,12 +58,53 @@ instance. The only thing you **need** to do is call:
 $uploader->clear(); // clear queue of scanned files
 ```
 
+### Console output
+
+If you are running the above code in the terminal you might want to see some fancy output of what is going on.\
+You can achieve this with the help of [Symfony Console](https://symfony.com/doc/current/components/console.html).
+
+```php
+$uploader = new \UploaderService\Service\Uploader(
+
+    $config,
+    new \UploaderService\Service\Uploader\Output( new \Symfony\Component\Console\Output\ConsoleOutput(), null, true )
+    
+); 
+```
+
+### Logging
+
+You can also write logs.\
+Just pass a `Psr\Log\LoggerInterface` as the second argument of the `UploaderService\Service\Uploader\Output` class.
+
+Only the following 3 log levels are used:
+
+ - `debug` - For trivial stuff like operation announcements and statistics.
+ - `info` - For successful operations like file uploads and deletions.
+ - `error` - For exceptions.
+
+```php
+$uploader = new \UploaderService\Service\Uploader(
+
+    $config,
+    new \UploaderService\Service\Uploader\Output(
+    
+        new \Symfony\Component\Console\Output\ConsoleOutput(),
+        ( new \Monolog\Logger( 'upload' ) )
+            ->pushHandler( new \Monolog\Handler\StreamHandler( 'debug.log', \Monolog\Logger::DEBUG ) ),
+        true
+        
+    )
+    
+); 
+```
+
 ## CLI usage
 
 The package comes with a ready-to-use CLI executable located at `bin/cli.php`.\
 You can run it with `php bin/cli.php upload ..` or even directly `./bin/cli.php upload ..`.
 
-You can specify values for all of the configuration options above in the command line.\
+You can specify values for all of the configuration options right in the command line.\
 For more info and available options run:
 
 ```bash

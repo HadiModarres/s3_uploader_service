@@ -19,7 +19,7 @@ class Config {
     protected $path;
 
     /**
-     * @var int
+     * @var string
      */
     protected $sizeThreshold;
 
@@ -159,31 +159,22 @@ class Config {
      */
     public function setSizeThreshold( string $sizeThreshold ): Config {
 
-        if ( ! preg_match( '/^(?P<value>(?:\d*\.)?\d+)(?P<unit>k|m|g|)b?$/i', $sizeThreshold, $matches ) ) {
+        if ( ! preg_match( '/^\s*([0-9\.]+)\s*([kmg]i?)?\s*$/i', $sizeThreshold, $matches ) ) {
 
             throw new InvalidConfigValueException( 'sizeThreshold', $sizeThreshold );
 
         }
 
-        $multipliers = [
-
-            '' => 1,
-            'k' => 1024,
-            'm' => 1048576,
-            'g' => 1073741824,
-
-        ];
-
-        $this->sizeThreshold = (int) round( (float) $matches['value'] * $multipliers[ $matches['unit'] ] );
+        $this->sizeThreshold = $sizeThreshold;
         return $this;
 
     }
 
     /**
-     * @return int
+     * @return string
      * @throws MissingConfigValueException
      */
-    public function getSizeThreshold(): int {
+    public function getSizeThreshold(): string {
 
         return $this->ensureSet( 'size-threshold' )->sizeThreshold;
 
