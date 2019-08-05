@@ -111,6 +111,17 @@ class Upload extends Command {
                          "and above. To only write entries for the specific level prefix\n" .
                          "with an exclamation mark. Example: <comment>!info:info.log</comment>." )
 
+            ->addOption( 'config', '', InputOption::VALUE_OPTIONAL,
+                         "Specifies a path to a JSON config file to read from and write configuration values to.\n" .
+                         "You can use this file to avoid configuring trivial stuff via the command line.\n" .
+                         "The file will not read or write values for the following entries: <comment>path</comment>,\n" .
+                         "<comment>s3-key</comment>, <comment>s3-secret</comment> and <comment>log</comment>.\n" .
+                         "Values specified via the command line will override those loaded from the config file." )
+
+            ->addOption( 'dump-config', '', InputOption::VALUE_NONE,
+                         "Use this to force save a configuration file for later use to the path specified\n" .
+                         "by <comment>--config</comment>.\n" .
+                         "If this option is set no other operation will be performed." )
 
         ;
 
@@ -127,12 +138,31 @@ class Upload extends Command {
      */
     protected function execute( InputInterface $input, OutputInterface $output ) {
 
+        $logger = $this->parseLogger( $input->getOption( 'log' ) );
+        $uploaderOutput = new Output( $output, $logger, true );
+
+        $configPath = $input->getOption( 'config' );
+        if ( $configPath && is_file( $configPath ) ) {
+
+            $this->config->mergeJSONFile( $configPath );
+
+        }
+
         $this->config->mergeConsoleInput( $input );
 
-        $logger = $this->parseLogger( $input->getOption( 'log' ) );
-        $uploader = new Uploader( $this->config, new Output( $output, $logger, true ) );
+        if ( $configPath && $input->getOption( 'dump-config' ) ) {
 
-        $uploader->scan()->upload();
+            $uploaderOutput->debug( 'Dumping configuration to <comment>%s</comment>.', $configPath );
+            $this->config->writeJSON( $configPath );
+
+            $uploaderOutput->success( 'Successfully dumped configuration to <comment>%s</comment>.', $configPath );
+            return;
+
+        }
+
+        ( new Uploader( $this->config, $uploaderOutput ) )
+            ->scan()
+            ->upload();
 
     }
 

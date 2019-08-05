@@ -336,7 +336,7 @@ class Config implements JsonSerializable {
      * @return Config
      * @throws CannotWriteJSONFileException
      */
-    public function saveAsJSON( string $path ): Config {
+    public function writeJSON( string $path ): Config {
 
         if ( ! @file_put_contents( $path, json_encode( $this ) ) ) {
 
