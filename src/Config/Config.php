@@ -17,6 +17,8 @@ use UploaderService\Config\Exceptions\NotInSpecException;
  * @method Config setPath( string $value )
  * @method Config setSizeThreshold( string $value )
  * @method Config setDelete( bool $value )
+ * @method Config setLimit( int $value )
+ * @method Config setSkipUpToDate( bool $value )
  * @method Config setS3Region( string $value )
  * @method Config setS3Bucket( string $value )
  * @method Config setS3Key( string $value )
@@ -25,6 +27,8 @@ use UploaderService\Config\Exceptions\NotInSpecException;
  * @method string getPath()
  * @method string getSizeThreshold()
  * @method bool getDelete()
+ * @method int getLimit()
+ * @method bool getSkipUpToDate()
  * @method string getS3Region()
  * @method string getS3Bucket()
  * @method string getS3Key()
@@ -37,6 +41,8 @@ class Config implements JsonSerializable {
     const PATH              = 'path';
     const SIZE_THRESHOLD    = 'size-threshold';
     const DELETE            = 'delete';
+    const LIMIT             = 'limit';
+    const SKIP_UP_TO_DATE   = 'skip-up-to-date';
     const S3_REGION         = 's3-region';
     const S3_BUCKET         = 's3-bucket';
     const S3_KEY            = 's3-key';
@@ -84,6 +90,10 @@ class Config implements JsonSerializable {
             } ),
 
             static::DELETE => new Spec( static::DELETE, 'boolean', false ),
+
+            static::LIMIT => new Spec( static::LIMIT, 'integer', 0 ),
+
+            static::SKIP_UP_TO_DATE => new Spec( static::SKIP_UP_TO_DATE, 'boolean', false ),
 
             static::S3_REGION => new Spec( static::S3_REGION, 'string', null, true, function ( string $value ) {
 

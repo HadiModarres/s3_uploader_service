@@ -195,7 +195,23 @@ class Spec {
      */
     public function filter( $value ) {
 
-        if ( gettype( $value ) !== $this->getType() ) {
+        $targetType = $this->getType();
+        $actualType = gettype( $value );
+
+        // special, cast-able
+        if ( 'string' === $targetType && 'integer' === $actualType ) {
+
+            $actualType = 'string';
+            $value = (string) $value;
+
+        } else if ( 'integer' === $targetType && 'string' === $actualType ) {
+
+            $actualType = 'integer';
+            $value = (int) $value;
+
+        }
+
+        if ( $actualType !== $targetType ) {
 
             throw new InvalidConfigValueException( $this->getKey(), $value );
 

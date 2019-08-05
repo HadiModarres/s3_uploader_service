@@ -101,6 +101,12 @@ class Upload extends Command {
             ->addOption( 'delete', '', InputOption::VALUE_NONE,
                          'Specifies whether files should be deleted locally after uploaded.' )
 
+            ->addOption( 'limit', '', InputOption::VALUE_OPTIONAL,
+                         'Specifies a maximum number of files to be processed.' )
+
+            ->addOption( 'skip-up-to-date', '', InputOption::VALUE_NONE,
+                         'Specifies whether up-to-date files should be skipped rather than rewritten (default).' )
+
             ->addOption( 'log', '', InputOption::VALUE_OPTIONAL | InputOption::VALUE_IS_ARRAY,
                          "Specifies a log entry in the format <comment>log_level</comment>:" .
                          "<comment>path_to_file</comment>, where\n" .
