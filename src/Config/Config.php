@@ -2,65 +2,257 @@
 
 namespace UploaderService\Config;
 
+use JsonSerializable;
 use Symfony\Component\Console\Input\InputInterface;
+use UploaderService\Config\Config\Spec;
+use UploaderService\Config\Exceptions\CannotWriteJSONFileException;
 use UploaderService\Config\Exceptions\InvalidConfigValueException;
+use UploaderService\Config\Exceptions\InvalidJSONFileException;
 use UploaderService\Config\Exceptions\MissingConfigValueException;
+use UploaderService\Config\Exceptions\NotInSpecException;
 
 /**
  * Class Config
  *
+ * @method Config setPath( string $value )
+ * @method Config setSizeThreshold( string $value )
+ * @method Config setDelete( bool $value )
+ * @method Config setS3Region( string $value )
+ * @method Config setS3Bucket( string $value )
+ * @method Config setS3Key( string $value )
+ * @method Config setS3Secret( string $value )
+ *
+ * @method string getPath()
+ * @method string getSizeThreshold()
+ * @method bool getDelete()
+ * @method string getS3Region()
+ * @method string getS3Bucket()
+ * @method string getS3Key()
+ * @method string getS3Secret()
+ *
  * @package UploaderService\Config
  */
-class Config {
+class Config implements JsonSerializable {
+
+    const PATH              = 'path';
+    const SIZE_THRESHOLD    = 'size-threshold';
+    const DELETE            = 'delete';
+    const S3_REGION         = 's3-region';
+    const S3_BUCKET         = 's3-bucket';
+    const S3_KEY            = 's3-key';
+    const S3_SECRET         = 's3-secret';
 
     /**
-     * @var string
+     * @var Spec[]
      */
-    protected $path;
+    protected $spec = [];
 
     /**
-     * @var string
+     * @var array
      */
-    protected $sizeThreshold;
+    protected $config = [];
 
     /**
-     * @var string
+     * Config constructor.
      */
-    protected $s3Region;
+    public function __construct() {
+
+        $this->spec = [
+
+            static::PATH => new Spec( static::PATH, 'string', null, false, function ( string $value ) {
+
+                if ( ! is_dir( $value ) ) {
+
+                    throw new InvalidConfigValueException( static::PATH, $value );
+
+                }
+
+                return realpath( $value );
+
+            } ),
+
+            static::SIZE_THRESHOLD => new Spec( static::SIZE_THRESHOLD, 'string', null, true, function ( string $value ) {
+
+                if ( ! preg_match( '/^\s*([0-9\.]+)\s*([kmg]i?)?\s*$/i', $value, $matches ) ) {
+
+                    throw new InvalidConfigValueException( static::SIZE_THRESHOLD, $value );
+
+                }
+
+                return $value;
+
+            } ),
+
+            static::DELETE => new Spec( static::DELETE, 'boolean', false ),
+
+            static::S3_REGION => new Spec( static::S3_REGION, 'string', null, true, function ( string $value ) {
+
+                if ( empty( $value ) ) {
+
+                    throw new InvalidConfigValueException( static::S3_REGION, $value );
+
+                }
+
+                return $value;
+
+            } ),
+
+            static::S3_BUCKET => new Spec( static::S3_BUCKET, 'string', null, true, function ( string $value ) {
+
+                if ( empty( $value ) ) {
+
+                    throw new InvalidConfigValueException( static::S3_BUCKET, $value );
+
+                }
+
+                return $value;
+
+            } ),
+
+            static::S3_KEY => new Spec( static::S3_KEY, 'string', null, false, function ( string $value ) {
+
+                if ( empty( $value ) ) {
+
+                    throw new InvalidConfigValueException( static::S3_KEY, $value );
+
+                }
+
+                return $value;
+
+            } ),
+
+            static::S3_SECRET => new Spec( static::S3_SECRET, 'string', null, false, function ( string $value ) {
+
+                if ( empty( $value ) ) {
+
+                    throw new InvalidConfigValueException( static::S3_SECRET, $value );
+
+                }
+
+                return $value;
+
+            } ),
+
+        ];
+
+    }
 
     /**
-     * @var string
+     * @param $name
+     * @param $arguments
+     *
+     * @return mixed|Config|null
+     * @throws InvalidConfigValueException
+     * @throws MissingConfigValueException
+     * @throws NotInSpecException
      */
-    protected $s3Bucket;
+    public function __call( $name, $arguments ) {
+
+        if ( 'set' === substr( $name, 0, 3 ) ) {
+
+            return $this->set(
+
+                strtolower( preg_replace( '/([A-Z])/', '-$1', lcfirst( substr( $name, 3 ) ) ) ),
+                ...$arguments
+
+            );
+
+        }
+
+        if ( 'get' === substr( $name, 0, 3 ) ) {
+
+            return $this->get( strtolower( preg_replace( '/([A-Z])/', '-$1', lcfirst( substr( $name, 3 ) ) ) ) );
+
+        }
+
+        trigger_error( sprintf( 'Call to undefined method %1$s::%2$s()', __CLASS__, $name ), E_USER_ERROR );
+        return null;
+
+    }
 
     /**
-     * @var string
+     * @param string $key
+     * @param $value
+     *
+     * @return Config
+     * @throws NotInSpecException
      */
-    protected $s3Key;
+    public function set( string $key, $value ): Config {
 
-    /**
-     * @var string
-     */
-    protected $s3Secret;
+        if ( ! array_key_exists( $key, $this->spec ) ) {
 
-    /**
-     * @var bool
-     */
-    protected $delete;
+            throw new NotInSpecException( $key );
+
+        }
+
+        $this->config[ $key ] = $value;
+        return $this;
+
+    }
 
     /**
      * @param string $key
      *
-     * @return Config
+     * @return mixed|null
+     * @throws InvalidConfigValueException
      * @throws MissingConfigValueException
+     * @throws NotInSpecException
      */
-    protected function ensureSet( string $key ): Config {
+    public function get( string $key ) {
 
-        $property = lcfirst( str_replace( ' ', '', ucwords( str_replace( '-', ' ', $key ) ) ) );
+        if ( ! array_key_exists( $key, $this->spec ) ) {
 
-        if ( ! isset( $this->$property ) ) {
+            throw new NotInSpecException( $key );
+
+        }
+
+        $spec = $this->spec[ $key ];
+
+        if ( ! $this->has( $key ) ) {
+
+            if ( $spec->hasDefault() ) {
+
+                return $spec->getDefault();
+
+            }
 
             throw new MissingConfigValueException( $key );
+
+        }
+
+        return $spec->filter( $this->config[ $key ] );
+
+    }
+
+    /**
+     * @param string $key
+     *
+     * @return bool
+     */
+    public function has( string $key ): bool {
+
+        return array_key_exists( $key, $this->config );
+
+    }
+
+    /**
+     * @param InputInterface $input
+     *
+     * @return Config
+     * @throws NotInSpecException
+     */
+    public function mergeConsoleInput( InputInterface $input ): Config {
+
+        foreach ( $this->spec as $key => $spec ) {
+
+            $value = $input->getOption( $key );
+            if ( ! isset( $value ) ) {
+
+                continue;
+
+            }
+
+            $this->set( $key, $value );
 
         }
 
@@ -69,52 +261,22 @@ class Config {
     }
 
     /**
-     * @param InputInterface $input
+     * @param array $data
      *
      * @return Config
-     * @throws InvalidConfigValueException
+     * @throws NotInSpecException
      */
-    public function mergeFromInput( InputInterface $input ): Config {
+    public function mergeArray( array $data ): Config {
 
-        if ( '' !== ( $value = $input->getOption( 'path' ) ) ) {
+        foreach ( $this->spec as $key => $spec ) {
 
-            $this->setPath( $value );
+            if ( ! array_key_exists( $key, $data ) ) {
 
-        }
+                continue;
 
-        if ( '' !== ( $value = $input->getOption( 'size-threshold' ) ) ) {
+            }
 
-            $this->setSizeThreshold( $value );
-
-        }
-
-        if ( '' !== ( $value = $input->getOption( 's3-region' ) ) ) {
-
-            $this->setS3Region( $value );
-
-        }
-
-        if ( '' !== ( $value = $input->getOption( 's3-bucket' ) ) ) {
-
-            $this->setS3Bucket( $value );
-
-        }
-
-        if ( '' !== ( $value = $input->getOption( 's3-key' ) ) ) {
-
-            $this->setS3Key( $value );
-
-        }
-
-        if ( '' !== ( $value = $input->getOption( 's3-secret' ) ) ) {
-
-            $this->setS3Secret( $value );
-
-        }
-
-        if ( ! isset( $this->delete ) ) {
-
-            $this->setDelete( $input->getOption( 'delete' ) );
+            $this->set( $key, $data[ $key ] );
 
         }
 
@@ -126,195 +288,63 @@ class Config {
      * @param string $path
      *
      * @return Config
-     * @throws InvalidConfigValueException
+     * @throws InvalidJSONFileException
+     * @throws NotInSpecException
      */
-    public function setPath( string $path ): Config {
+    public function mergeJSONFile( string $path ): Config {
 
-        if ( ! is_dir( $path ) ) {
+        $content = @file_get_contents( $path );
+        if ( ! $content ) {
 
-            throw new InvalidConfigValueException( 'path', $path );
+            throw new InvalidJSONFileException( $path );
 
         }
 
-        $this->path = realpath( $path );
-        return $this;
+        $data = @json_decode( $content, true );
+        if ( ! is_array( $data ) ) {
 
-    }
-
-    /**
-     * @return string
-     * @throws MissingConfigValueException
-     */
-    public function getPath(): string {
-
-        return $this->ensureSet( 'path' )->path;
-
-    }
-
-    /**
-     * @param string $sizeThreshold
-     *
-     * @return Config
-     * @throws InvalidConfigValueException
-     */
-    public function setSizeThreshold( string $sizeThreshold ): Config {
-
-        if ( ! preg_match( '/^\s*([0-9\.]+)\s*([kmg]i?)?\s*$/i', $sizeThreshold, $matches ) ) {
-
-            throw new InvalidConfigValueException( 'sizeThreshold', $sizeThreshold );
+            throw new InvalidJSONFileException( $path );
 
         }
 
-        $this->sizeThreshold = $sizeThreshold;
-        return $this;
+        return $this->mergeArray( $data );
 
     }
 
     /**
-     * @return string
-     * @throws MissingConfigValueException
+     * @return array
      */
-    public function getSizeThreshold(): string {
+    public function jsonSerialize(): array {
 
-        return $this->ensureSet( 'size-threshold' )->sizeThreshold;
+        return array_map( function ( Spec $spec ) {
+
+            return $this->get( $spec->getKey() );
+
+        }, array_filter( $this->spec, function ( Spec $spec ) {
+
+            return $spec->isSerializable() &&
+                   $this->has( $spec->getKey() ) &&
+                   ( ! $spec->hasDefault() || $spec->getDefault() !== $this->get( $spec->getKey() ) );
+
+        } ) );
 
     }
 
     /**
-     * @param string $s3Region
+     * @param string $path
      *
      * @return Config
-     * @throws InvalidConfigValueException
+     * @throws CannotWriteJSONFileException
      */
-    public function setS3Region( string $s3Region ): Config {
+    public function saveAsJSON( string $path ): Config {
 
-        if ( empty( $s3Region ) ) {
+        if ( ! @file_put_contents( $path, json_encode( $this ) ) ) {
 
-            throw new InvalidConfigValueException( 's3-region', $s3Region );
+            throw new CannotWriteJSONFileException( $path );
 
         }
 
-        $this->s3Region = $s3Region;
         return $this;
-
-    }
-
-    /**
-     * @return string
-     * @throws MissingConfigValueException
-     */
-    public function getS3Region(): string {
-
-        return $this->ensureSet( 's3-region' )->s3Region;
-
-    }
-
-    /**
-     * @param string $s3Bucket
-     *
-     * @return Config
-     * @throws InvalidConfigValueException
-     */
-    public function setS3Bucket( string $s3Bucket ): Config {
-
-        if ( empty( $s3Bucket ) ) {
-
-            throw new InvalidConfigValueException( 's3-bucket', $s3Bucket );
-
-        }
-
-        $this->s3Bucket = $s3Bucket;
-        return $this;
-
-    }
-
-    /**
-     * @return string
-     * @throws MissingConfigValueException
-     */
-    public function getS3Bucket(): string {
-
-        return $this->ensureSet( 's3-bucket' )->s3Bucket;
-
-    }
-
-    /**
-     * @param string $s3Key
-     *
-     * @return Config
-     * @throws InvalidConfigValueException
-     */
-    public function setS3Key( string $s3Key ): Config {
-
-        if ( empty( $s3Key ) ) {
-
-            throw new InvalidConfigValueException( 's3-key', $s3Key );
-
-        }
-
-        $this->s3Key = $s3Key;
-        return $this;
-
-    }
-
-    /**
-     * @return string
-     * @throws MissingConfigValueException
-     */
-    public function getS3Key(): string {
-
-        return $this->ensureSet( 's3-key' )->s3Key;
-
-    }
-
-    /**
-     * @param string $s3Secret
-     *
-     * @return Config
-     * @throws InvalidConfigValueException
-     */
-    public function setS3Secret( string $s3Secret ): Config {
-
-        if ( empty( $s3Secret ) ) {
-
-            throw new InvalidConfigValueException( 's3-secret', $s3Secret );
-
-        }
-
-        $this->s3Secret = $s3Secret;
-        return $this;
-
-    }
-
-    /**
-     * @return string
-     * @throws MissingConfigValueException
-     */
-    public function getS3Secret(): string {
-
-        return $this->ensureSet( 's3-secret' )->s3Secret;
-
-    }
-
-    /**
-     * @param bool $delete
-     *
-     * @return Config
-     */
-    public function setDelete( bool $delete ): Config {
-
-        $this->delete = $delete;
-        return $this;
-
-    }
-
-    /**
-     * @return bool
-     * @throws MissingConfigValueException
-     */
-    public function getDelete(): bool {
-
-        return $this->ensureSet( 'delete' )->delete;
 
     }
 

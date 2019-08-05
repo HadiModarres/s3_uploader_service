@@ -15,12 +15,23 @@ class InvalidConfigValueException extends Exception {
      * InvalidConfigValueException constructor.
      *
      * @param string $key
-     * @param string $value
+     * @param $value
      */
-    public function __construct( string $key, string $value ) {
+    public function __construct( string $key, $value ) {
 
-        parent::__construct( sprintf( 'Empty or invalid value supplied for configuration key "%s": "%s".',
-                                      $key, $value ) );
+        parent::__construct(
+
+            sprintf(
+
+                'Empty or invalid value supplied for configuration key "%s": %s.',
+                $key,
+                is_object( $value ) ?
+                    'object ' . get_class( $value ) :
+                    gettype( $value ) . ' ' . json_encode( $value )
+
+            )
+
+        );
 
     }
 

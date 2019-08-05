@@ -12,7 +12,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use UploaderService\Command\Exceptions\InvalidLogNotationException;
 use UploaderService\Config\Config;
-use UploaderService\Config\Exceptions\InvalidConfigValueException;
+use UploaderService\Config\Exceptions\NotInSpecException;
 use UploaderService\Service\Uploader;
 use UploaderService\Service\Uploader\Output;
 
@@ -81,22 +81,22 @@ class Upload extends Command {
             ->setHelp( "This command scans a folder for large files and uploads them to an S3 bucket." )
 
             ->addOption( 'path', '', InputOption::VALUE_OPTIONAL,
-                         'Specifies a source directory path to perform the scans on.', '' )
+                         'Specifies a source directory path to perform the scans on.' )
 
             ->addOption( 'size-threshold', '', InputOption::VALUE_OPTIONAL,
-                         'Specifies a size threshold above which to process files.', '' )
+                         'Specifies a size threshold above which to process files.' )
 
             ->addOption( 's3-region', '', InputOption::VALUE_OPTIONAL,
-                         'Specifies an AWS S3 region to use for uploads.', '' )
+                         'Specifies an AWS S3 region to use for uploads.' )
 
             ->addOption( 's3-bucket', '', InputOption::VALUE_OPTIONAL,
-                         'Specifies an AWS S3 bucket name to use for uploads.', '' )
+                         'Specifies an AWS S3 bucket name to use for uploads.' )
 
             ->addOption( 's3-key', '', InputOption::VALUE_OPTIONAL,
-                         'Specifies an AWS S3 key to use for uploads.', '' )
+                         'Specifies an AWS S3 key to use for uploads.' )
 
             ->addOption( 's3-secret', '', InputOption::VALUE_OPTIONAL,
-                         'Specifies an AWS S3 secret to use for uploads.', '' )
+                         'Specifies an AWS S3 secret to use for uploads.' )
 
             ->addOption( 'delete', '', InputOption::VALUE_NONE,
                          'Specifies whether files should be deleted locally after uploaded.' )
@@ -121,13 +121,13 @@ class Upload extends Command {
      * @param OutputInterface $output
      *
      * @return int|void|null
-     * @throws InvalidConfigValueException
      * @throws InvalidLogNotationException
+     * @throws NotInSpecException
      * @throws Exception
      */
     protected function execute( InputInterface $input, OutputInterface $output ) {
 
-        $this->config->mergeFromInput( $input );
+        $this->config->mergeConsoleInput( $input );
 
         $logger = $this->parseLogger( $input->getOption( 'log' ) );
         $uploader = new Uploader( $this->config, new Output( $output, $logger, true ) );
