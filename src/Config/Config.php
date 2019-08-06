@@ -262,6 +262,12 @@ class Config implements JsonSerializable {
 
             }
 
+            if ( 'boolean' === $spec->getType() && ! $value ) {
+
+                continue;
+
+            }
+
             $this->set( $key, $value );
 
         }
