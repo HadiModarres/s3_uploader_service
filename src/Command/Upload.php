@@ -52,7 +52,7 @@ class Upload extends Command {
 
         foreach ( $notations as $notation ) {
 
-            if ( ! preg_match( '/^(?P<strict>\!?)(?P<level>debug|info|error):(?P<path>.+)$/', $notation, $matches ) ) {
+            if ( ! preg_match( '/^(?P<strict>@?)(?P<level>debug|info|error):(?P<path>.+)$/', $notation, $matches ) ) {
 
                 throw new InvalidLogNotationException( $notation );
 
@@ -60,7 +60,7 @@ class Upload extends Command {
 
             $handler = new StreamHandler( $matches['path'], $matches['level'] );
 
-            if ( '!' === $matches['strict'] ) {
+            if ( '@' === $matches['strict'] ) {
 
                 $handler = new FilterHandler( $handler, $matches['level'], $matches['level'] );
 
@@ -115,7 +115,7 @@ class Upload extends Command {
                          "where logs should be written.\n" .
                          "By default logs will include entries from the specified <comment>log_level</comment>\n" .
                          "and above. To only write entries for the specific level prefix\n" .
-                         "with an exclamation mark. Example: <comment>!info:info.log</comment>." )
+                         "with <comment>@</comment>. Example: <comment>@info:info.log</comment>." )
 
             ->addOption( 'config', '', InputOption::VALUE_OPTIONAL,
                          "Specifies a path to a JSON config file to read from and write configuration values to.\n" .

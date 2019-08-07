@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d4ee40-19e7-4f6a-abcc-f780719623b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/Config.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,50 +17,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Command/Upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
-              <folding>
-                <element signature="e#43#57#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Config/Config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="293" column="13" selection-start-line="293" selection-start-column="13" selection-end-line="293" selection-end-column="13" />
-              <folding>
-                <element signature="e#42#63#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" selection-start-column="15" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -152,6 +107,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,22 +115,10 @@
               <item name="enya-uploader" type="b2602c69:ProjectViewProjectNode" />
               <item name="enya-uploader" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="enya-uploader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enya-uploader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enya-uploader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enya-uploader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Command" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,23 +171,23 @@
       <workItem from="1564935539221" duration="103000" />
       <workItem from="1564935661277" duration="10337000" />
       <workItem from="1564984953606" duration="10971000" />
-      <workItem from="1565070858279" duration="254000" />
+      <workItem from="1565070858279" duration="478000" />
+      <workItem from="1565155527058" duration="46000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25100000" />
+    <option name="totallyTimeSpent" value="25370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.55821544" side_tool="true" weight="0.24413647" />
       <window_info id="TODO" order="1" sideWeight="0.26224157" side_tool="true" weight="0.18070363" />
       <window_info id="Terminal" order="2" sideWeight="0.537797" side_tool="true" weight="0.2192" />
       <window_info id="Run" order="3" sideWeight="0.26224157" side_tool="true" weight="0.2739872" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.44178456" visible="true" weight="0.22334754" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.44178456" visible="true" weight="0.18017058" />
       <window_info id="File Transfer" order="6" sideWeight="0.26224157" side_tool="true" weight="0.2739872" />
       <window_info id="Version Control" order="7" sideWeight="0.53177965" side_tool="true" weight="0.18676628" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -488,36 +432,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/info.log" />
     <entry file="file://$PROJECT_DIR$/logs/debug.log" />
-    <entry file="file://$PROJECT_DIR$/config.json">
+    <entry file="file://$PROJECT_DIR$/test.sh" />
+    <entry file="file://$PROJECT_DIR$/src/Config/Config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/Upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+        <state relative-caret-position="501">
+          <caret line="272" column="9" selection-start-line="272" selection-start-column="9" selection-end-line="272" selection-end-column="9" />
           <folding>
-            <element signature="e#43#57#0#PHP" expanded="true" />
+            <element signature="e#42#63#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Config/Config.php">
+    <entry file="file://$PROJECT_DIR$/config.json" />
+    <entry file="file://$PROJECT_DIR$/src/Command/Upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="293" column="13" selection-start-line="293" selection-start-column="13" selection-end-line="293" selection-end-column="13" />
+        <state relative-caret-position="39">
+          <caret line="143" column="7" selection-start-line="143" selection-start-column="7" selection-end-line="143" selection-end-column="7" />
           <folding>
-            <element signature="e#42#63#0#PHP" expanded="true" />
+            <element signature="e#43#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
